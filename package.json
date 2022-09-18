@@ -1,0 +1,34 @@
+{
+  "name": "download-kernel-linux",
+  "version": "4.15.15",
+  "description": "Downloads and patch Linux kernel source code to use in NodeOS",
+  "author": "CallyCa",
+  "license": "MIT",
+  "scripts": {
+    "ci": "buho-SemaphoreCI",
+    "install": "scripts/install.js",
+    "lint": "standard",
+    "test": "grep nodeos linux/include/linux/linux_logo.h -q"
+  },
+  "dependencies": {
+    "download-manager": "^0.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CallyCa/download-kernel-linux.git"
+  },
+  "devDependencies": {
+    "buho": "^0.3.4",
+    "standard": "^17.0.0"
+  },
+  "buho": {
+    "sha256": "778115922d0d416de3bca1d3f9f8c52b41dde995b89d24b0b12cfc85b4913165",
+    "type": "DirectoryIndex",
+    "url": "https://cdn.kernel.org/pub/linux/kernel/v4.x"
+  },
+  "bugs": {
+    "url": "https://github.com/CallyCa/download-kernel-linux/issues"
+  },
+  "homepage": "https://github.com/CallyCa/download-kernel-linux#readme",
+  "main": "index.js"
+}
