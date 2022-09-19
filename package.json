@@ -7,7 +7,7 @@
   "scripts": {
     "ci": "buho-SemaphoreCI",
     "install": "scripts/install.js",
-    "lint": "standard",
+    "lint": "standard --fix",
     "test": "grep nodeos linux/include/linux/linux_logo.h -q"
   },
   "dependencies": {
@@ -18,7 +18,7 @@
     "url": "git+https://github.com/CallyCa/download-kernel-linux.git"
   },
   "devDependencies": {
-    "buho": "^0.3.4",
+    "buho": "github:CallyCa/buhu.git",
     "standard": "^17.0.0"
   },
   "buho": {
